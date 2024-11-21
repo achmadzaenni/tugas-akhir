@@ -1,0 +1,159 @@
+/* General body and form styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0e0e0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main container for both forms */
+.form-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Left-side panel (with purple background and logo) */
+.form-container::before {
+    content: "";
+    background: url(/ta/img/logo1.png);
+    background-color: #ffffff; /* Purple background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 50%;
+    background-size: contain; /* Adjust background-size to contain the logo */
+    background-position: center;
+    color: white;
+}
+
+/* Add kost logo inside the left panel */
+.form-container .kost-logo {
+    width: 100px; /* Adjust size of logo */
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Text inside the left-side panel */
+.form-container h1 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Form section (shared by both login and register) */
+.form-section {
+    padding: 50px;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+/* Form headers */
+.form-section h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #333;
+}
+
+/* Input styling */
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="password"],
+.form-section select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-section input:focus,
+.form-section select:focus {
+    border-color: #6a0dad;
+}
+
+/* Button styling */
+.form-section button {
+    width: 100%;
+    background-color: #6a0dad;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+    background-color: #5b09b5;
+}
+
+/* Error message */
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Link for switching between login and register */
+.form-section p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form-section p a {
+    color: #6a0dad;
+    text-decoration: none;
+}
+
+.form-section p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        flex-direction: column;
+    }
+
+    .form-container::before {
+        width: 100%;
+        height: 250px;
+    }
+
+    .form-section {
+        width: 100%;
+    }
+}
+.input-group {
+    position: relative;
+}
+
+.input-group-text {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}

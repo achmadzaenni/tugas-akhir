@@ -1,0 +1,66 @@
+/* carousel */
+.carousel-item {
+    height: 600px;
+    background-size: cover;
+      background-position: center;
+    }
+    .carousel-caption {
+      bottom: 20%;
+    }
+    .carousel-caption h1 {
+      font-size: 4rem;
+      font-weight: bold;
+    }
+    .carousel-caption p {
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+    }
+    .carousel-caption .btn {
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      background-color: #fff;
+      color: #000;
+      border-radius: 0;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .carousel-caption .btn:hover {
+      background-color: #ccc;
+    }
+    /* end carousel */
+
+    /* rating dashboard */
+    .rating-container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .rating span {
+      font-size: 2rem;
+      cursor: pointer;
+      color: lightgray;
+    }
+    
+    .rating span:hover,
+    .rating span:hover ~ span {
+      color: gold;
+    }
+    
+    .stars-average {
+      display: inline-block;
+      position: relative;
+      font-size: 2rem;
+      color: lightgray;
+    }
+    
+    .stars-average span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      color: gold;
+    }
+    
+    /* end rating-dashboard */
